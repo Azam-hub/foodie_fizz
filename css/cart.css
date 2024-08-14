@@ -1,0 +1,508 @@
+section {
+    width: 90%;
+    margin: 40px auto 0 auto;
+}
+
+/* Modal */
+
+.black-bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.685);
+    z-index: 5;
+    display: none;
+}
+
+.modal {
+    width: 600px;
+    padding: 28px 25px;
+    background-color: #ff8c2e;
+    border: 2px solid #6e3600;
+    border-radius: 10px;
+    margin-top: 100px ;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 6;
+    display: none;
+    /* color: #333; */
+    color: #f4f4f4;
+}
+
+.modal .cross-icon {
+    position: absolute;
+    right: 16px;
+    top: 12px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.modal .select-address {
+    background-color: #ad4e00;
+    border: 1px solid #682f00;
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin-top: 17px;
+    font-size: 16px;
+    box-shadow: 2px 2px 6px 0px #682f00;
+    cursor: pointer;
+}
+
+/* Modal */
+
+.upper-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.upper-section .upper-section-left h1 {
+    font-size: 36px;
+    color: var(--heading-color);
+}
+
+.container {
+    border: 1px solid #8a8a8a;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* ----------------------- Orders Showing --------------------------- */
+
+/* .container .orders-section .bottom {
+    overflow: auto;
+    padding: 10px;
+} */
+
+/* .container .orders-section .top {
+    position: relative;
+    height: 50px;
+}
+.container .orders-section .top::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: var(--main-orange);
+    bottom: 0;
+} */
+
+.container .orders-section .top p {
+    margin-top: 5px;
+}
+
+.container .orders-section .bottom {
+    margin-top: 30px;
+}
+
+.container .orders-section .bottom .table {
+    width: 100%;
+}
+
+.container .orders-section .order-line {
+    display: flex;
+    box-shadow: 4px 4px 11px #c5c5c5;
+    /* box-shadow: 4px 4px 11px -1px #000; */
+    margin-top: 18px;
+}
+
+.container .orders-section .order-line span {
+    border-left: 1px solid #000;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.container .orders-section .order-line span.first-column {
+    flex-basis: 8%;
+    border: none;
+}
+.container .orders-section .order-line span.second-column {
+    flex-basis: 43%;
+}
+.container .orders-section .order-line span.third-column {
+    flex-basis: 14%;
+}
+.container .orders-section .order-line span.fourth-column {
+    flex-basis: 14%;
+}
+.container .orders-section .order-line span.fifth-column {
+    flex-basis: 14%;
+}
+.container .orders-section .order-line span.sixth-column {
+    flex-basis: 7%;
+}
+
+
+
+/* .container .orders-section .order-line span.first-column {
+    flex-basis: 8%;
+    border: none;
+}
+.container .orders-section .order-line span.second-column {
+    flex-basis: 40%;
+}
+.container .orders-section .order-line span.third-column {
+    flex-basis: 11%;
+}
+.container .orders-section .order-line span.fourth-column {
+    flex-basis: 11%;
+}
+.container .orders-section .order-line span.fifth-column {
+    flex-basis: 11%;
+}
+.container .orders-section .order-line span.sixth-column {
+    flex-basis: 13%;
+}
+.container .orders-section .order-line span.seventh-column {
+    flex-basis: 6%;
+} */
+
+
+
+.container .orders-section .order-head span {
+    padding: 10px 0px;
+    box-sizing: border-box;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.container .orders-section .main-order img {
+    width: 80px;
+    height: 55px;
+}
+
+.container .orders-section .main-order span.second-column {
+    padding: 14px 0px 14px 16px;
+    box-sizing: border-box;
+    justify-content: flex-start;
+    gap: 8px;
+}
+
+.container .orders-section .grand-total span {
+    font-size: 19px;
+    font-weight: 800;
+    color: var(--main-orange);
+    border: none;
+}
+
+.container .orders-section .order-line span.sixth-column i {
+    font-size: 18px;
+    transition: .2s;
+    cursor: pointer;
+}
+.container .orders-section .order-line span.sixth-column i:hover {
+    color: var(--main-orange);
+}
+
+/* ----------------------- Orders Showing --------------------------- */
+
+
+
+
+
+/* ----------------------- Payment Methods --------------------------- */
+
+.container .payment-methods-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    background-color: var(--main-orange);
+    padding: 10px 14px 18px 14px;
+    color: #fff;
+    border-radius: 13px;
+    box-shadow: 2px 2px 12px 2px #8e4100;
+    border: 2px solid #8e4100;
+}
+
+.container .payment-methods-section .left {
+    flex-basis: 32%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.container .payment-methods-section .left .head h1 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.container .payment-methods-section .left .selection .cod-payment-div, 
+.container .payment-methods-section .left .selection .card-payment-div {
+    margin-top: 2px;
+}
+
+.container .payment-methods-section .left .selection .txt-label {
+    cursor: pointer;
+}
+
+.container .payment-methods-section .left .selection input {
+    display: none;
+}
+
+.container .payment-methods-section .left .selection input:checked ~ .custom-radio-label {
+    background-color: #723400;
+    border: 3px solid #fff;
+}
+
+.container .payment-methods-section .left .selection .custom-radio-label {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    margin-right: 7px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.container .payment-methods-section .left .card-details {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.container .payment-methods-section .left .card-details h2 {
+    font-weight: 600;
+}
+
+.container .payment-methods-section .left .card-details .card-type h3 {
+    margin-bottom: 4px;
+}
+
+.container .payment-methods-section .left .card-details .card-type i {
+    font-size: 25px;
+}
+
+.payment-methods-section .left .card-details .form div {
+    margin-top: 15px;
+    position: relative;
+}
+
+.payment-methods-section .left .card-details .form .exp-cvv {
+    display: flex;
+    justify-content: space-between;
+}
+
+.payment-methods-section .left .card-details .form .exp-cvv div {
+    flex-basis: 49.5%;
+    position: relative;
+    margin-top: 0;
+}
+
+.payment-methods-section .left .card-details .form div span {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    color: #e2e2e2;
+    transition: .3s;
+    z-index: 1;
+}
+
+.payment-methods-section .left .card-details .form div input {
+    width: 100%;
+    font-size: 15px;
+    padding: 8px 12px;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 5px;
+    background-color: transparent;
+    outline: none;
+    position: relative;
+    z-index: 2;
+}
+
+.payment-methods-section .left .card-details .form div input:focus ~ span {
+    top: 0px;
+    padding: 0 5px;
+    font-size: 12px;
+    background-color: var(--main-orange);
+    z-index: 3;
+}
+
+.filled-input {
+    top: 0px !important;
+    padding: 0 5px !important;
+    font-size: 12px !important;
+    background-color: var(--main-orange) !important;
+    z-index: 3 !important;
+}
+
+
+
+.container .payment-methods-section .middle {
+    flex-basis: 32%;
+    /* background-color: blue; */
+    padding: 0 5px;
+}
+
+.container .payment-methods-section .middle .address h1 {
+    font-weight: 600;
+}
+
+.container .payment-methods-section .middle .address button {
+    padding: 5px 10px;
+    margin-top: 7px;
+    font-size: 15px;
+    border-radius: 6px;
+    outline: none;
+    border: 1px solid #000;
+    background-color: #6b3000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.container .payment-methods-section .middle .address .selected-address {
+    background-color: #ad4e00;
+    border: 1px solid #682f00;
+    padding: 6px 8px;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+.container .payment-methods-section .middle .promo-code {
+    margin-top: 18px;
+}
+
+.container .payment-methods-section .middle .promo-code h1 {
+    font-weight: 600;
+}
+
+.container .payment-methods-section .middle .promo-code input {
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #000;
+    margin-top: 6px;
+}
+.container .payment-methods-section .middle .promo-code button {
+    margin-top: 8px;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 6px 14px;
+    cursor: pointer;
+    background-color: #6b3000;
+    color: #fff;
+}
+
+
+.container .payment-methods-section .right {
+    flex-basis: 32%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: red; */
+}
+
+.container .payment-methods-section .right h1 {
+    font-weight: 600;
+}
+
+.container .payment-methods-section .right .prices-div div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    font-size: 17px;
+    position: relative;
+}
+.container .payment-methods-section .right .prices-div div::after {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    height: 1px;
+    bottom: -6px;
+}
+
+.container .payment-methods-section .right .checkout-div .checkout-btn {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 16px;
+    background-color: #6b3000;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 2px 3px 8px 4px #a74300;
+    margin-bottom: 6px;
+    margin-top: 45px;
+    border: 2px solid #512502;
+    transition: .4s;
+}
+
+.container .payment-methods-section .right .checkout-div .checkout-btn:hover {
+    transform: translate(1px,3px) scale(1.02);
+    background-color: #944300;
+}
+
+.container .payment-methods-section .right .checkout-div .checkout-btn i {
+    margin-left: 8px;
+}
+
+.container .payment-methods-section .right .checkout-div .checkout-btn .checkout-text {
+    position: relative;
+}
+
+.container .payment-methods-section .right .checkout-div .checkout-btn .loading-gif {
+    width: 26px;
+    position: absolute;
+    top: 0px;
+    left: -38px;
+    display: none;
+}
+
+
+
+@media screen and (max-width: 1050px) {
+    .container .payment-methods-section {
+        flex-direction: column;
+        gap: 25px;
+        justify-content: unset;
+    }
+    .container .payment-methods-section .middle {
+        padding: 0;
+    }
+    .container .payment-methods-section .middle .address .selected-address {
+        max-width: 450px;
+    }
+    .container .payment-methods-section .right .checkout-div .checkout-btn {
+        margin-top: 25px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    section {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .container .orders-section .bottom {
+        overflow: auto;
+        padding-bottom: 10px;
+    }
+    
+    .container .orders-section .bottom .table {
+        width: 660px;
+    }
+}
+
+@media screen and (max-width: 365px) {
+    .container .payment-methods-section .left .head h1 {
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .payment-methods-section .left .card-details .form .exp-cvv div {
+        flex-basis: 49%;
+    }
+}

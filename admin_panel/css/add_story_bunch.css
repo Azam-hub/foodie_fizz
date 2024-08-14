@@ -1,0 +1,76 @@
+.main-container .section {
+    margin-top: 10px;
+    padding: 6px 14px;
+}
+
+.main-container .section .upper-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-container .section .upper-section h2 {
+    font-size: 28px;
+}
+
+.main-container .section .upper-section h2 q {
+    color: var(--main-orange);
+    font-size: 34px;
+}
+
+
+
+
+.main-container .section .downer-section {
+    padding: 0 10px 15px 10px;
+}
+
+.main-container .section .downer-section form {
+    width: 100%;
+    /* margin-top: 15px; */
+}
+
+.main-container .section .downer-section form div {
+    margin-top: 15px;
+}
+
+.main-container .section .downer-section form label {
+    font-weight: 700;
+}
+
+.main-container .section .downer-section form input[type="text"], .main-container .section .downer-section form textarea {
+    display: block;
+    width: 100%;
+    padding: 6px 9px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    margin-top: 4px;
+    outline: none;
+}
+.main-container .section .downer-section form input[type="text"]:focus, 
+.main-container .section .downer-section form textarea:focus {
+    border: 1px solid #000;
+}
+
+
+.main-container .section .downer-section form input[type="file"] {
+    display: block;
+    margin-top: 4px;
+}
+
+.main-container .section .downer-section form textarea {
+    height: 300px;
+}
+
+.main-container .section .downer-section form button {
+    background-color: var(--main-orange);
+    padding: 5px 12px;
+    color: #fff;
+    border-radius: 6px;
+    border: 1px solid #854306;
+    cursor: pointer;
+    outline: none;
+    font-size: 16px;
+    margin-top: 10px;
+}

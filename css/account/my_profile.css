@@ -1,0 +1,180 @@
+.black-bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.685);
+    z-index: 2;
+    display: none;
+}
+/* Specific Modal */
+
+.password-modal div {
+    margin-top: 6px;
+    position: relative;
+}
+.password-modal div .eye {
+    position: absolute;
+    bottom: 10px;
+    right: 12px;
+    font-size: 25px;
+    color: #000;
+    cursor: pointer;
+}
+
+.password-modal div .close-eye {
+    display: none;
+}
+
+/* .password-modal a {
+    float: right;
+    margin-top: 2px;
+}
+.password-modal div:nth-child(3) {
+    margin-top: 28px;
+} */
+
+/* Specific Modal */
+
+.modal {
+    width: 600px;
+    padding: 28px 25px;
+    background-color: #ff8c2e;
+    border: 2px solid #6e3600;
+    border-radius: 10px;
+    margin-top: 100px ;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    display: none;
+    /* color: #333; */
+    color: #f4f4f4;
+}
+
+.modal .cross-icon {
+    position: absolute;
+    right: 16px;
+    top: 12px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.modal form {
+    margin-top: 12px;
+}
+
+.modal form label {
+    font-weight: 500;
+}
+
+.modal form input, .modal form textarea {
+    margin-top: 2px;
+    width: 100%;
+    font-size: 16px;
+    display: block;
+    padding: 7px 12px;
+    outline: none;
+    border: 2px solid #6e3600;
+    border-radius: 6px;
+}
+.modal form textarea {
+    height: 150px;
+}
+
+.modal form button {
+    padding: 5px 12px;
+    font-size: 15px;
+    margin-top: 14px;
+    display: block;
+    outline: none;
+    border: 1px solid #000;
+    border-radius: 4px;
+    background-color: #6e3600;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+
+section {
+    width: 85%;
+    margin: 40px auto 0 auto;
+}
+
+.upper-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.upper-section .upper-section-left h1 {
+    font-size: 36px;
+    color: var(--heading-color);
+}
+
+.downer-section {
+    margin-top: 40px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 49% 49%;
+    justify-content: space-between;
+    row-gap: 30px;
+}
+
+.container .info .head {
+    color: #333;
+}
+
+.container .info .text {
+    font-size: 18px;
+    margin-top: 3px;
+}
+
+.container .info button {
+    margin-top: 12px;
+    padding: 5px 15px;
+    outline: none;
+    border: 1px solid #6e3600;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: var(--main-orange);
+    color: #fff;
+    font-size: 16px;
+}
+
+.container .info .danger-btn {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 5px 15px;
+    outline: none;
+    border: 1px solid rgb(155, 0, 0);
+    border-radius: 8px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    background-color: #ff1919;
+}
+
+
+
+@media screen and (max-width: 650px) {
+    .modal {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        display: grid;
+        grid-template-columns: 100%;
+        /* justify-content: space-between; */
+        /* row-gap: 30px; */
+    }
+    .container .address-container {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+}

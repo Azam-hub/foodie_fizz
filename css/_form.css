@@ -1,0 +1,67 @@
+form.proper-form {
+    margin-top: 15px;
+    width: 100%;
+}
+
+form.proper-form div {
+    margin-top: 17px;
+    width: 100%;
+}
+
+form.proper-form label {
+    font-weight: 600;
+}
+
+form.proper-form input,
+form.proper-form select,
+form.proper-form textarea {
+    display: block;
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 16px;
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid #424242;
+    margin-top: 5px;
+}
+form.proper-form input:focus,
+form.proper-form select:focus,
+form.proper-form textarea:focus {
+    box-shadow: 0 0 6px 0px var(--main-orange);
+}
+
+form.proper-form textarea {
+    height: 200px;
+}
+
+form.proper-form .password, 
+form.proper-form .confirm-password {
+    position: relative;
+}
+
+form.proper-form .password .eye, 
+form.proper-form .confirm-password .eye {
+    position: absolute;
+    bottom: 7px;
+    right: 12px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+form.proper-form .password .close-eye, 
+form.proper-form .confirm-password .close-eye {
+    display: none;
+}
+
+form.proper-form button {
+    cursor: pointer;
+    padding: 6px 20px;
+    border: 1px solid rgb(155, 64, 4);
+    border-radius: 6px;
+    background-color: var(--main-orange);
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    outline: none;
+    margin-top: 14px;
+}

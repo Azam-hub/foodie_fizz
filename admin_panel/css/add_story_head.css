@@ -1,0 +1,215 @@
+.main-container .section {
+    margin-top: 10px;
+    padding: 6px 14px;
+}
+
+.main-container .section .upper-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-container .section .upper-section .left h2 {
+    font-size: 28px;
+}
+
+
+/* ------------------------------ Add Head ----------------------------------- */
+
+.main-container .section .downer-section .add-head {
+    padding: 0 12px;
+    margin-top: 8px;
+}
+
+.main-container .section .downer-section .add-head h3 {
+    font-size: 22px;
+}
+
+.main-container .section .downer-section .add-head form div {
+    margin-top: 20px;
+}
+
+.main-container .section .downer-section .add-head form label {
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.main-container .section .downer-section .add-head form input {
+    display: block;
+    margin-top: 5px;
+}
+.main-container .section .downer-section .add-head form input[type=text] {
+    width: 300px;
+    padding: 6px 10px;
+    font-size: 15px;
+    outline: none;
+    /* border: none; */
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+.main-container .section .downer-section .add-head form input[type=file] {
+    margin-top: 8px;
+    font-size: 15px;
+}
+
+.main-container .section .downer-section .add-head form img {
+    margin-top: 16px;
+    width: 210px;
+}
+
+.main-container .section .downer-section .add-head form button {
+    background-color: var(--main-orange);
+    outline: none;
+    border: 2px solid #964502;
+    padding: 5px 10px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 7px;
+    font-size: 15px;
+    margin-top: 18px;
+}
+
+/* ------------------------------ Add Head ----------------------------------- */
+
+
+/* ------------------------------ Heads ----------------------------------- */
+
+.main-container .section .downer-section .heads {
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+.main-container .section .downer-section .heads .upper-heads {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-container .section .downer-section .heads .upper-heads .left h3 {
+    font-size: 22px;
+}
+
+.main-container .section .downer-section .heads .upper-heads .right label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.main-container .section .downer-section .heads .upper-heads .right input {
+    width: 300px;
+    padding: 6px 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #000;
+    display: block;
+}
+.main-container .section .downer-section .heads .upper-heads .right input:focus {
+    outline: none;
+}
+
+.main-container .section .downer-section .heads .downer-heads {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    column-gap: 20px;
+    row-gap: 15px;
+    margin-top: 24px;
+}
+
+.main-container .section .downer-section .heads .downer-heads .head {
+    border-radius: 5px;
+    padding: 7px 10px;
+    background-color: var(--main-orange);
+    color: #fff;
+    position: relative;
+}
+
+.main-container .section .downer-section .heads .downer-heads .head .upper-head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-container .section .downer-section .heads .downer-heads .head .upper-head .added-on {
+    width: 80px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.main-container .section .downer-section .heads .downer-heads .head .upper-head .actions {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 4px;
+}
+
+.main-container .section .downer-section .heads .downer-heads .head .upper-head .actions .plus-anchor {
+    margin-top: -3px;
+    color: #fff;
+}
+
+.main-container .section .downer-section .heads .downer-heads .head .upper-head .actions .edit-head, 
+.main-container .section .downer-section .heads .downer-heads .head .upper-head .actions .delete-head, 
+.main-container .section .downer-section .heads .downer-heads .head .upper-head .actions .angle {
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.main-container .section .downer-section .heads .downer-heads .head .upper-head .actions .not-div {
+    width: 15px;
+}
+
+.main-container .section .downer-section .heads .downer-heads .head .upper-head .actions ul {
+    background-color: rgb(65,69,70);
+    padding: 6px;
+    border-radius: 4px;
+    list-style: none;
+    position: absolute;
+    top: 37px;
+    left: 200px;
+    z-index: 3;
+    display: none;
+}
+
+.main-container .section .downer-section .heads .downer-heads .head .upper-head .actions ul li {
+    border: 1px solid #000;
+    border-radius: 4px;
+    padding: 35px 52px 4px 6px;
+    position: relative;
+}
+
+.main-container .section .downer-section .heads .downer-heads .head .upper-head .actions ul li .edit-bunch, 
+.main-container .section .downer-section .heads .downer-heads .head .upper-head .actions ul li .delete-bunch {
+    position: absolute;
+    color: #fff;
+    font-size: 16px;
+    top: 6px;
+    cursor: pointer;
+}
+
+.main-container .section .downer-section .heads .downer-heads .head .upper-head .actions ul li .edit-bunch {
+    right: 29px;
+    margin-top: -4px;
+}
+.main-container .section .downer-section .heads .downer-heads .head .upper-head .actions ul li .delete-bunch {
+    right: 4px;
+}
+
+
+.main-container .section .downer-section .heads .downer-heads .head .downer-head {
+    margin-top: 10px;
+}
+
+.main-container .section .downer-section .heads .downer-heads .head .downer-head img {
+    width: 210px;
+    /* position: relative;
+    left: 50%;
+    transform: translateX(-50%); */
+}
+
+.main-container .section .downer-section .heads .downer-heads .head .downer-head h3 {
+    text-align: center;
+}
+
+/* ------------------------------ Heads ----------------------------------- */

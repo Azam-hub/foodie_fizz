@@ -1,0 +1,201 @@
+section {
+    width: 96vw;
+    margin: 30px auto 50px auto;
+}
+
+.container {
+    display: flex;
+}
+
+.container .left-side {
+    flex-basis: 78%;
+    /* background-color: red; */
+    padding: 15px;
+}
+
+.container .left-side .upper-section h1 {
+    font-size: 42px;
+    color: var(--heading-color);
+}
+
+.container .left-side .bunch {
+    margin-top: 30px;
+    padding: 0 15px;
+}
+
+.container .left-side .bunch video, 
+.container .left-side .bunch img {
+    width: 90%;
+    margin: auto;
+}
+
+.container .left-side .bunch h2 {
+    margin-top: 12px;
+    margin-bottom: 5px;
+    font-size: 26px;
+}
+
+.container .left-side .bunch p {
+    text-align: justify;
+    /* text-indent: 10%; */
+}
+
+
+.container .right-side {
+    flex-basis: 22%;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 14px;
+}
+
+.container .right-side h3 {
+    font-size: 22px;
+}
+
+.container .right-side .story {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 7px;
+    background-color: var(--main-orange);
+    padding: 10px 10px 15px 10px;
+    color: #fff;
+    border-radius: 6px;
+}
+
+.container .right-side .story .img img {
+    width: 100%;
+}
+
+.container .right-side .story .date {
+    align-self: flex-start;
+    font-size: 14px;
+}
+
+.container .right-side .story .date i {
+    margin-right: 4px;
+}
+
+.container .right-side .story .title {
+    position: relative;
+}
+
+.container .right-side .story .title::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    background-color: #fff;
+    bottom: -6px;
+    left: 0;
+}
+
+.container .right-side .story .title h3 {
+    text-align: center;
+}
+
+.container .right-side .story .para {
+    font-size: 14px;
+    margin-top: 6px;
+}
+
+.container .right-side .story .read-more {
+    display: flex;
+    justify-content: center;
+}
+
+.container .right-side .story .read-more a {
+    display: inline-block;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    margin-top: 8px;
+    border-radius: 3px;
+    padding: 4px 20px 4px 8px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.container .right-side .story .read-more a i {
+    position: relative;
+    left: 3px;
+    transition: .4s;
+}
+
+.container .right-side .story .read-more a:hover i {
+    left: 10px;
+}
+
+
+@media screen and (max-width: 1024px) {
+    section {
+        width: 100vw;
+    }
+    .container .left-side {
+        flex-basis: 75%;
+        padding: 5px;
+    }
+    .container .right-side {
+        flex-basis: 25%;
+        padding: 10px 15px 10px 7px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container .left-side .bunch video, 
+    .container .left-side .bunch img {
+        width: 100%;
+        margin: auto;
+    }
+    .container .left-side {
+        position: relative;
+    }
+    .container .left-side::after {
+        content: '';
+        position: absolute;
+        background-color: var(--main-orange);
+        width: 94%;
+        height: 2px;
+        bottom: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .container .right-side {
+        margin-top: 22px;
+    }
+    .right-side h3 {
+        margin-bottom: 10px;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .right-side .story {
+        width: 320px;
+        margin: auto;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+    .right-side .story {
+        width: 84%;
+    }
+    .container .left-side .upper-section h1 {
+        font-size: 37px;
+    }
+    section {
+        width: 95vw;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .right-side .story {
+        width: 90%;
+    }
+    .container .left-side .upper-section h1 {
+        font-size: 33px;
+    }
+}

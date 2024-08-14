@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Panel - Foodie Fizz</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&family=Racing+Sans+One&display=swap" rel="stylesheet">
+
+    <!-- Fontawesome Link -->
+    <link rel="stylesheet" href="fontawesome_icon/css/all.min.css">
+
+    <!-- Local Links -->
+    <link rel="shortcut icon" href="src/static/logo/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/_utils.css">
+    <link rel="stylesheet" href="css/_sidebar_header.css">
+    
+    <link rel="stylesheet" href="css/add_story_head.css">
+</head>
+<body>
+
+<div class="head-main-container">
+
+    <div class="sidebar">
+        <a href="#" class="top">
+            <img src="src/static/logo/white_logo.png" alt="Pic">
+            <h3>Admin Panel</h3>
+        </a>
+        <div class="down">
+            <div class="section">
+                <h3>Customers</h3>
+                <ul>
+                    <li><a href="#">Customers</a></li>
+                    <li><a href="#">Banned Customers</a></li>
+                </ul>
+            </div>
+            <div class="section">
+                <h3>Orders</h3>
+                <ul>
+                    <li><a href="#">Orders</a></li>
+                    <li><a href="#">Delivered Orders</a></li>
+                    <li><a href="#">Removed Orders</a></li>
+                </ul>
+            </div>
+            <div class="section">
+                <h3>Categories and Items</h3>
+                <ul>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">Items</a></li>
+                </ul>
+            </div>
+            <div class="section">
+                <h3>Stories</h3>
+                <ul>
+                    <li><a href="#">Add Story</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="header">
+            <div class="left">
+                <div class="menu-lines">
+                    <div class="lines">
+                        <span class="line line-1"></span>
+                        <span class="line line-2"></span>
+                        <span class="line line-3"></span>
+                    </div>
+                </div>
+                <div class="heads">
+                    <h1>Supervisor Panel</h1>
+                    <h3>WELCOME! <span>Muhammad Azam</span></h3>
+                </div>
+            </div>
+            <div class="right">
+                <a href="#">Logout</a>
+            </div>
+        </div>
+        <div class="section">
+            <div class="upper-section">
+                <div class="left">
+                    <h2>Add Story</h2>
+                </div>
+            </div>
+            <div class="downer-section">
+                <div class="add-head">
+                    <h3>Add Story Head</h3>
+                    <form>
+                        <div class="add-head-div">
+                            <label for="add-head">Enter Head Name</label>
+                            <input type="text" id="add-head" placeholder="Enter Head Name">
+                        </div>
+                        <div class="head-image-div">
+                            <label for="head-image">Select Head Image</label>
+                            <input type="file" name="" id="head-image">
+                            <img id="preview_img_tag" src="src/static/default_image.PNG" alt="" srcset="">
+                        </div>
+                        <!-- <div class="img-div">
+                        </div> -->
+                        <button type="submit">Add Head</button>
+                    </form>
+                </div>
+                <div class="heads">
+                    <div class="upper-heads">
+                        <div class="left">
+                            <h3>All Story Heads</h3>
+                        </div>
+                        <div class="right">
+                            <label for="search-head">Search Head</label>
+                            <input type="text" id="search-head" placeholder="Search Head">
+                        </div>
+                    </div>
+                    <div class="downer-heads">
+                        <div class="head">
+                            <div class="upper-head">
+                                <div class="added-on">
+                                    Added on: 07 Jan 23
+                                </div>
+                                <div class="actions">
+                                    <a href="#" class="plus-anchor">
+                                        <i class="plus fa-solid fa-plus"></i>
+                                    </a>
+                                    <i class="edit-head fa-regular fa-pen-to-square" data-id="68"></i>
+                                    <i class="delete-head fa-regular fa-trash-can" data-id="68"></i>
+                                    <!-- <div class="not-div"></div> -->
+                                    <i class="angle fa-solid fa-angle-down"></i>
+                                    <ul class="ul">
+                                        <li>
+                                            <a href="#" class="edit-bunch"><i class="fa-regular fa-pen-to-square" data-id="68"></i></a>
+                                            <i class="delete-bunch fa-regular fa-trash-can" data-id="68"></i>
+                                            Beginning
+                                        </li>
+                                        <li>
+                                            <a href="#" class="edit-bunch"><i class="fa-regular fa-pen-to-square" data-id="68"></i></a>
+                                            <i class="delete-bunch fa-regular fa-trash-can" data-id="68"></i>
+                                            End
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="downer-head">
+                                <div class="image">
+                                    <img src="../_test_img/Beef Biyani.jpg" alt="Pic">
+                                </div>
+                                <h3>Beginning</h3>
+                            </div>
+                        </div>
+                        <div class="head">
+                            <div class="upper-head">
+                                <div class="added-on">
+                                    Added on: 07 Jan 23
+                                </div>
+                                <div class="actions">
+                                    <a href="#">
+                                        <i class="plus fa-solid fa-plus"></i>
+                                    </a>
+                                    <i class="edit-head fa-regular fa-pen-to-square" data-id="68"></i>
+                                    <i class="delete-head fa-regular fa-trash-can" data-id="68"></i>
+                                    <div class="not-div"></div>
+                                    <!-- <i class="angle fa-solid fa-angle-down"></i> -->
+                                </div>
+                            </div>
+                            <div class="downer-head">
+                                <div class="image">
+                                    <img src="../_test_img/Beef Biyani.jpg" alt="Pic">
+                                </div>
+                                <h3>Beginning</h3>
+                            </div>
+                        </div>
+                        <div class="head">
+                            <div class="upper-head">
+                                <div class="added-on">
+                                    Added on: 07 Jan 23
+                                </div>
+                                <div class="actions">
+                                    <a href="#">
+                                        <i class="plus fa-solid fa-plus"></i>
+                                    </a>
+                                    <i class="edit-head fa-regular fa-pen-to-square" data-id="68"></i>
+                                    <i class="delete-head fa-regular fa-trash-can" data-id="68"></i>
+                                    <div class="not-div"></div>
+                                    <!-- <i class="angle fa-solid fa-angle-down"></i> -->
+                                </div>
+                            </div>
+                            <div class="downer-head">
+                                <div class="image">
+                                    <img src="../_test_img/Beef Biyani.jpg" alt="Pic">
+                                </div>
+                                <h3>Beginning</h3>
+                            </div>
+                        </div>
+                        <div class="head">
+                            <div class="upper-head">
+                                <div class="added-on">
+                                    Added on: 07 Jan 23
+                                </div>
+                                <div class="actions">
+                                    <a href="#">
+                                        <i class="plus fa-solid fa-plus"></i>
+                                    </a>
+                                    <i class="edit-head fa-regular fa-pen-to-square" data-id="68"></i>
+                                    <i class="delete-head fa-regular fa-trash-can" data-id="68"></i>
+                                    <div class="not-div"></div>
+                                    <!-- <i class="angle fa-solid fa-angle-down"></i> -->
+                                </div>
+                            </div>
+                            <div class="downer-head">
+                                <div class="image">
+                                    <img src="../_test_img/Beef Biyani.jpg" alt="Pic">
+                                </div>
+                                <h3>Beginning</h3>
+                            </div>
+                        </div>
+                        <div class="head">
+                            <div class="upper-head">
+                                <div class="added-on">
+                                    Added on: 07 Jan 23
+                                </div>
+                                <div class="actions">
+                                    <a href="#">
+                                        <i class="plus fa-solid fa-plus"></i>
+                                    </a>
+                                    <i class="edit-head fa-regular fa-pen-to-square" data-id="68"></i>
+                                    <i class="delete-head fa-regular fa-trash-can" data-id="68"></i>
+                                    <div class="not-div"></div>
+                                    <!-- <i class="angle fa-solid fa-angle-down"></i> -->
+                                </div>
+                            </div>
+                            <div class="downer-head">
+                                <div class="image">
+                                    <img src="../_test_img/Beef Biyani.jpg" alt="Pic">
+                                </div>
+                                <h3>Beginning</h3>
+                            </div>
+                        </div>
+                        <div class="head">
+                            <div class="upper-head">
+                                <div class="added-on">
+                                    Added on: 07 Jan 23
+                                </div>
+                                <div class="actions">
+                                    <a href="#">
+                                        <i class="plus fa-solid fa-plus"></i>
+                                    </a>
+                                    <i class="edit-head fa-regular fa-pen-to-square" data-id="68"></i>
+                                    <i class="delete-head fa-regular fa-trash-can" data-id="68"></i>
+                                    <!-- <div class="not-div"></div> -->
+                                    <i class="angle fa-solid fa-angle-down"></i>
+                                    <ul class="ul">
+                                        <li>
+                                            <a href="#" class="edit-bunch"><i class="fa-regular fa-pen-to-square" data-id="68"></i></a>
+                                            <i class="delete-bunch fa-regular fa-trash-can" data-id="68"></i>
+                                            Beginning
+                                        </li>
+                                        <li>
+                                            <a href="#" class="edit-bunch"><i class="fa-regular fa-pen-to-square" data-id="68"></i></a>
+                                            <i class="delete-bunch fa-regular fa-trash-can" data-id="68"></i>
+                                            End
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="downer-head">
+                                <div class="image">
+                                    <img src="../_test_img/Beef Biyani.jpg" alt="Pic">
+                                </div>
+                                <h3>Beginning</h3>
+                            </div>
+                        </div>
+                        <div class="head">
+                            <div class="upper-head">
+                                <div class="added-on">
+                                    Added on: 07 Jan 23
+                                </div>
+                                <div class="actions">
+                                    <a href="#">
+                                        <i class="plus fa-solid fa-plus"></i>
+                                    </a>
+                                    <i class="edit-head fa-regular fa-pen-to-square" data-id="68"></i>
+                                    <i class="delete-head fa-regular fa-trash-can" data-id="68"></i>
+                                    <div class="not-div"></div>
+                                    <!-- <i class="angle fa-solid fa-angle-down"></i> -->
+                                </div>
+                            </div>
+                            <div class="downer-head">
+                                <div class="image">
+                                    <img src="../_test_img/Beef Biyani.jpg" alt="Pic">
+                                </div>
+                                <h3>Beginning</h3>
+                            </div>
+                        </div>
+                        <div class="head">
+                            <div class="upper-head">
+                                <div class="added-on">
+                                    Added on: 07 Jan 23
+                                </div>
+                                <div class="actions">
+                                    <a href="#">
+                                        <i class="plus fa-solid fa-plus"></i>
+                                    </a>
+                                    <i class="edit-head fa-regular fa-pen-to-square" data-id="68"></i>
+                                    <i class="delete-head fa-regular fa-trash-can" data-id="68"></i>
+                                    <div class="not-div"></div>
+                                    <!-- <i class="angle fa-solid fa-angle-down"></i> -->
+                                </div>
+                            </div>
+                            <div class="downer-head">
+                                <div class="image">
+                                    <img src="../_test_img/Beef Biyani.jpg" alt="Pic">
+                                </div>
+                                <h3>Beginning</h3>
+                            </div>
+                        </div>
+                        <div class="head">
+                            <div class="upper-head">
+                                <div class="added-on">
+                                    Added on: 07 Jan 23
+                                </div>
+                                <div class="actions">
+                                    <a href="#">
+                                        <i class="plus fa-solid fa-plus"></i>
+                                    </a>
+                                    <i class="edit-head fa-regular fa-pen-to-square" data-id="68"></i>
+                                    <i class="delete-head fa-regular fa-trash-can" data-id="68"></i>
+                                    <div class="not-div"></div>
+                                    <!-- <i class="angle fa-solid fa-angle-down"></i> -->
+                                </div>
+                            </div>
+                            <div class="downer-head">
+                                <div class="image">
+                                    <img src="../_test_img/Beef Biyani.jpg" alt="Pic">
+                                </div>
+                                <h3>Beginning</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="section-2">
+                <div class="up">
+                    <div class="left">
+                        <h2>All Categories</h2>
+                    </div>
+                    <div class="right">
+                        <label for="search-category">Search Category</label>
+                        <input type="text" id="search-category" placeholder="Search Category">
+                    </div>
+                </div>
+                <div class="down">
+                    <table>
+                        <tr>
+                            <th>S. No. </th>
+                            <th>Categories Name</th>
+                            <th>Categories Image</th>
+                            <th>No. of Items</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                            <th>Added on</th>
+                        </tr>
+                        <tr>
+                            <td>1.</td>
+                            <td>Pizza</td>
+                            <td><img src="../_test_img/Beef Biyani.jpg" alt="Category Pic"></td>
+                            <td>2</td>
+                            <td>
+                                <span class="status active-status">Active</span>
+                                <span class="status disabled-status">Disabled</span>
+                            </td>
+                            <td>
+                                <button class="action active-action">Active</button>
+                                <button class="action disable-action">Disable</button>
+                                <button class="action delete-action">Delete</button>
+                            </td>
+                            <td>03:35 pm || 07 Mar, 2023</td>
+                        </tr>
+                    </table>
+                </div>
+            </div> -->
+
+        </div>
+    </div>
+</div>
+    
+</body>
+
+<!-- jQuery -->
+<script src="jquery/jquery-3.6.1.min.js"></script>
+
+<script>
+
+    // Showing preview of image
+    var preview_image = document.getElementById('preview_img_tag')
+
+    $('#head-image').change(function (e) {
+        var image_type = URL.createObjectURL(e.target.files[0]);
+        console.log(image_type)
+        preview_image.setAttribute('src', image_type)
+
+    })
+
+
+    // Showing Hiding list of bunch
+    $('.angle').click(function () {
+        $(this).next().show()
+    })
+
+    $('body').click(function(evt){
+        if(evt.target.classList.contains('ul') || evt.target.classList.contains('angle')) {
+            return;
+            
+        }
+        if($(evt.target).closest('.ul, .angle').length) {
+            return;             
+        }
+        $('.head .actions ul').hide()
+    });
+</script>
+
+<!-- Sidebar Hide/Show -->
+<script src="js/sidebar_show_hide.js"></script>
+
+<!-- Ionicon Link -->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+</html>

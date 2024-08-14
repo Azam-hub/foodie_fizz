@@ -1,0 +1,123 @@
+section {
+    width: 90%;
+    margin: 40px auto 0 auto;
+}
+
+.upper-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.upper-section .upper-section-left h1 {
+    font-size: 36px;
+    color: var(--heading-color);
+}
+
+.upper-section .upper-section-right {
+    position: relative;
+}
+
+.upper-section .upper-section-right i {
+    position: absolute;
+    left: 13px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.upper-section .upper-section-right i::after {
+    content: "";
+    position: absolute;
+    top: -9px;
+    right: -11px;
+    width: 1px;
+    height: 34px;
+    background-color: #000;
+}
+
+.upper-section .upper-section-right input {
+    width: 300px;
+    font-size: 15px;
+    padding: 7px 10px 7px 50px;
+    border: 1px solid #000;
+    outline: none;
+    border-radius: 4px;
+}
+
+.downer-section {
+    margin-top: 30px;
+}
+
+.downer-section .items {
+    display: grid;
+    grid-template-columns: 24.25% 24.25% 24.25% 24.25%;
+    align-items: flex-start;
+    row-gap: 30px;
+    column-gap: 1%;
+}
+
+
+/* @media screen and (max-width: 700px) {
+    .upper-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    .upper-section .upper-section-right {
+        width: 100%;
+    }
+    .upper-section .upper-section-right input {
+        width: 100%;
+    }
+} */
+
+@media screen and (max-width: 1200px) {
+    .downer-section .items {
+        grid-template-columns: 32.3% 32.3% 32.3%;
+    }
+    .downer-section .items .item img {
+        width: 27vw !important;
+        height: 18vw !important;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .upper-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    .upper-section .upper-section-right {
+        width: 100%;
+    }
+    .upper-section .upper-section-right input {
+        width: 100%;
+    }
+    .downer-section .items {
+        grid-template-columns: 48.5% 48.5%;
+    }
+    .downer-section .items .item img {
+        width: 40vw !important;
+        height: 30vw !important;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .downer-section .items {
+        grid-template-columns: 100%;
+    }
+    .downer-section .items .item img {
+        width: 60vw !important;
+        height: 48vw !important;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .downer-section .items .item img {
+        width: 70vw !important;
+        height: 60vw !important;
+    }
+}

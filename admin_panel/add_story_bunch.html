@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Panel - Foodie Fizz</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&family=Racing+Sans+One&display=swap" rel="stylesheet">
+
+    <!-- Fontawesome Link -->
+    <link rel="stylesheet" href="fontawesome_icon/css/all.min.css">
+
+    <!-- Local Links -->
+    <link rel="shortcut icon" href="src/static/logo/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/_utils.css">
+    <link rel="stylesheet" href="css/_sidebar_header.css">
+    
+    <link rel="stylesheet" href="css/add_story_bunch.css">
+</head>
+<body>
+
+<div class="head-main-container">
+    <div class="sidebar">
+        <a href="#" class="top">
+            <img src="src/static/logo/white_logo.png" alt="Pic">
+            <h3>Admin Panel</h3>
+        </a>
+        <div class="down">
+            <div class="section">
+                <h3>Customers</h3>
+                <ul>
+                    <li><a href="#">Customers</a></li>
+                    <li><a href="#">Banned Customers</a></li>
+                </ul>
+            </div>
+            <div class="section">
+                <h3>Orders</h3>
+                <ul>
+                    <li><a href="#">Orders</a></li>
+                    <li><a href="#">Delivered Orders</a></li>
+                    <li><a href="#">Removed Orders</a></li>
+                </ul>
+            </div>
+            <div class="section">
+                <h3>Categories and Items</h3>
+                <ul>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">Items</a></li>
+                </ul>
+            </div>
+            <div class="section">
+                <h3>Stories</h3>
+                <ul>
+                    <li><a href="#">Add Story</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="header">
+            <div class="left">
+                <div class="menu-lines">
+                    <div class="lines">
+                        <span class="line line-1"></span>
+                        <span class="line line-2"></span>
+                        <span class="line line-3"></span>
+                    </div>
+                </div>
+                <div class="heads">
+                    <h1>Supervisor Panel</h1>
+                    <h3>WELCOME! <span>Muhammad Azam</span></h3>
+                </div>
+            </div>
+            <div class="right">
+                <a href="#">Logout</a>
+            </div>
+        </div>
+        <div class="section">
+            <div class="upper-section">
+                <h2>Add Bunch for <q>cc</q></h2>
+            </div>
+            <div class="downer-section">
+                <form>
+                    <div class="add-head-div">
+                        <label for="add-head">Add Bunch Head</label>
+                        <input type="text" id="add-head" placeholder="Enter Bunch Head">
+                    </div>
+                    <div class="add-description-div">
+                        <label for="add-description">Add Bunch Description</label>
+                        <textarea id="add-description" placeholder="Enter Bunch Description"></textarea>
+                    </div>
+                    <div class="file">
+                        <label for="add-file">Add Image or Video</label>
+                        <input type="file" name="" id="add-file">
+                    </div>
+                    <div class="submit-btn">
+                        <button>Add Bunch</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+    
+</body>
+
+<!-- jQuery -->
+<script src="jquery/jquery-3.6.1.min.js"></script>
+
+<!-- Sidebar Hide/Show -->
+<script src="js/sidebar_show_hide.js"></script>
+
+<!-- Ionicon Link -->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+</html>

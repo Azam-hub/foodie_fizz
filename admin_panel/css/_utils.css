@@ -1,0 +1,161 @@
+:root {
+    --main-orange: #fa7c14;
+    --heading-color: #484848;
+    /* --main-grey: rgb(65,69,70); */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.hide {
+    display: none;
+}
+
+.black-bg {
+    backdrop-filter: blur(3px);
+}
+
+.modal {
+    box-shadow: 2px 2px 18px 0px #000;
+}
+
+.small-info {
+    font-size: 12px;
+}
+
+/* .head-main-container {
+    overflow-y: hidden;
+} */
+
+.msg {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.msg .left .icon {
+    font-size: 26px;
+    transform: translateY(3px);
+}
+
+.msg .right p {
+    margin-left: 10px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.danger-msg {
+	color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.success-msg {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.primary-msg {
+	color: #084298;
+    background-color: #cfe2ff;
+    border-color: #b6d4fe;
+}
+
+
+/* -------------------------------- Cart Buttons ------------------------------------ */
+
+.add-to-cart-btn {
+    cursor: pointer;
+    padding: 5px 12px;
+    border: 1px solid rgb(155, 64, 4);
+    border-radius: 5px;
+    background-color: var(--main-orange);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.remove-from-cart-btn {
+    cursor: pointer;
+    padding: 5px 12px;
+    border: 1px solid rgb(155, 4, 4);
+    border-radius: 5px;
+    background-color: #ff3535;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* -------------------------------- Cart Buttons ------------------------------------ */
+
+
+
+
+/* -------------------- Heading Dash START ------------------------ */
+
+h1.dash {
+    position: relative;
+    padding-left: 50px;
+}
+h1.dash span.dash {
+    position: absolute;
+    width: 40px;
+    height: 10px;
+    background-color: var(--main-orange);
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
+
+/* -------------------- Heading Dash END ------------------------ */
+
+.downer-section .load-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.downer-section .load-more-btn {
+    cursor: pointer;
+    padding: 5px 12px;
+    border: 1px solid rgb(155, 64, 4);
+    border-radius: 5px;
+    background-color: var(--main-orange);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+
+/* Chrome, Safari, Edge, Opera */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input[type=text]:focus, input[type=number]:focus, input[type=email]:focus, input[type=password]:focus, textarea:focus {
+    box-shadow: 0 0 6px 0px var(--main-orange);
+}
+
+table td button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* @media screen and (max-width: 1050px) {} */
+

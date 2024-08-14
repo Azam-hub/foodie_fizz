@@ -1,0 +1,61 @@
+section {
+    width: 85%;
+    margin: 40px auto 0 auto;
+}
+
+.upper-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.upper-section .upper-section-left h1 {
+    font-size: 36px;
+    color: var(--heading-color);
+}
+
+.downer-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.downer-section .left {
+    flex-basis: 45%;
+    margin-top: 20px;
+}
+
+.downer-section .left form.proper-form div {
+    margin-top: 18px;
+}
+
+.downer-section .left form.proper-form label {
+    font-size: 17px;
+}
+
+.downer-section .left form .forgot-password {
+    float: right;
+    margin-top: 5px;
+}
+
+.downer-section .left .jump {
+    margin-top: 16px;
+}
+
+.downer-section .right {
+    flex-basis: 40%
+}
+
+.downer-section .right img {
+    width: 100%;
+}
+
+
+@media screen and (max-width: 750px) {
+    section {
+        width: 90%;
+    }
+    .downer-section {
+        flex-direction: column;
+        gap: 40px;
+    }
+}

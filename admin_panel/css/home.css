@@ -1,0 +1,195 @@
+
+.black-bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.685);
+    z-index: 2;
+    display: none;
+}
+
+/* Specific Modal */
+
+.password-modal div {
+    margin-top: 6px;
+    position: relative;
+}
+.password-modal div .eye {
+    position: absolute;
+    bottom: 10px;
+    right: 12px;
+    font-size: 25px;
+    color: #000;
+    cursor: pointer;
+}
+
+.password-modal div .close-eye {
+    display: none;
+}
+
+/* Specific Modal */
+
+.modal {
+    width: 600px;
+    padding: 28px 25px;
+    background-color: #ff8c2e;
+    border: 2px solid #6e3600;
+    border-radius: 10px;
+    margin-top: 100px ;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    display: none;
+    /* color: #333; */
+    color: #f4f4f4;
+}
+
+.modal .cross-icon {
+    position: absolute;
+    right: 16px;
+    top: 12px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.modal form {
+    margin-top: 12px;
+}
+
+.modal form label {
+    font-weight: 500;
+}
+
+.modal form input, .modal form textarea {
+    margin-top: 2px;
+    width: 100%;
+    font-size: 16px;
+    display: block;
+    padding: 7px 12px;
+    outline: none;
+    border: 2px solid #6e3600;
+    border-radius: 6px;
+}
+.modal form textarea {
+    height: 150px;
+}
+
+.modal form button {
+    padding: 5px 12px;
+    font-size: 15px;
+    margin-top: 14px;
+    display: block;
+    outline: none;
+    border: 1px solid #000;
+    border-radius: 4px;
+    background-color: #6e3600;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+
+.main-container .section {
+    margin-top: 6px;
+    padding: 6px 14px;
+}
+
+.main-container .section .upper-section h2 {
+    font-size: 26px;
+}
+
+.main-container .section .downer-section .infos {
+    display: grid;
+    grid-template-columns: 49% 49%;
+    justify-content: space-between;
+}
+
+.main-container .section .downer-section .infos .info {
+    padding: 10px 0 ;
+}
+
+.main-container .section .downer-section .infos .info p {
+    font-size: 16px;
+}
+
+.main-container .section .downer-section .infos .info button {
+    margin-top: 8px;
+    padding: 5px 10px;
+    background-color: var(--main-orange);
+    color: #fff;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid #863c00;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.main-container .section .downer-section .updates {
+    margin-top: 14px;
+}
+
+.main-container .section .downer-section .updates .grid {
+    margin-top: 10px;
+    display: flex;
+    column-gap: 2%;
+    /* grid-template-rows: 48% 48%; */
+}
+
+.main-container .section .downer-section .updates .grid .left, 
+.main-container .section .downer-section .updates .grid .right {
+    flex-basis: 49%;
+}
+
+.main-container .section .downer-section .updates .grid .table h3 {
+    color: var(--main-orange);
+}
+
+.main-container .section .downer-section .updates .grid .table table {
+    border-collapse: collapse;
+    margin: 6px 0;
+    width: 100%;
+}
+
+.main-container .section .downer-section .updates .grid .table table th {
+    border: 2px solid #000 !important;
+}
+
+.main-container .section .downer-section .updates .grid .table table th, 
+.main-container .section .downer-section .updates .grid .table table td {
+    border: 1px solid #000;
+    text-align: center;
+    padding: 10px 15px;
+}
+
+
+
+
+.main-container .section table a.action {
+    text-decoration: none;
+    display: inline-block;
+}
+.main-container .section table .action {
+    padding: 4px 12px;
+    border: 2px solid;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    font-size: 15px;
+    margin: 4px auto;
+}
+.main-container .section table .in-progress-action, 
+.main-container .section table .view-btn {
+    background-color: #0069d9;
+    border-color: #015ab9;
+} 
+.main-container .section table .remove-action {
+    background-color: #e22639;
+    border-color: #bd2130;
+}
+.main-container .section table .deliver-action {
+    background-color: #29c523;
+    border-color: #0c9100;
+}

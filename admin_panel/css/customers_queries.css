@@ -1,0 +1,99 @@
+.main-container .section {
+    margin-top: 10px;
+    padding: 6px 14px;
+}
+
+.main-container .section .upper-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-container .section .upper-section .left h2 {
+    font-size: 26px;
+}
+
+.main-container .section .upper-section .right label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.main-container .section .upper-section .right input {
+    width: 300px;
+    padding: 6px 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #000;
+    display: block;
+}
+.main-container .section .upper-section .right input:focus {
+    outline: none;
+}
+
+.main-container .section .downer-section {
+    margin-top: 30px;
+}
+
+.main-container .section .downer-section table {
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.main-container .section table th {
+    border: 2px solid #000 !important;
+}
+
+.main-container .section table th, .main-container .section table td {
+    border: 1px solid #000;
+    text-align: center;
+    padding: 10px 8px;
+}
+
+.main-container .section table td:nth-child(3) {
+    overflow-wrap: anywhere;
+    font-size: 14px;
+    /* padding: 10px 3px; */
+}
+
+.main-container .section table td:nth-child(8) {
+    width: 12%;
+    /* padding: 10px 3px; */
+}
+
+.main-container .section table tr td.query {
+    width: 25%;
+}
+
+.main-container .section table .status {
+    border-radius: 5px;
+    font-size: 13px;
+    padding: 5px;
+    color: #fff;
+}
+.main-container .section table .opened-status {
+    background-color: rgb(38, 119, 196);
+}
+.main-container .section table .closed-status {
+    background-color: rgb(196, 38, 51);
+    /* background-color: red; */
+}
+
+.main-container .section table .action {
+    padding: 4px 13px;
+    border: 2px solid;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    font-size: 15px;
+}
+.main-container .section table .close-action, 
+.main-container .section table .remove-action {
+    background-color: #ec3043;
+    border-color: #8d111d;
+}
+.main-container .section table .open-action {
+    background-color: #0078f8;
+    border-color: #004691;
+}

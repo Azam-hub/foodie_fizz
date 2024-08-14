@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Story Detail (Change with PHP) - Foodie Fizz</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&family=Racing+Sans+One&display=swap" rel="stylesheet">
+
+    <!-- Fontawesome Link -->
+    <link rel="stylesheet" href="fontawesome_icon/css/all.min.css">
+
+    <!-- Local Links -->
+    <link rel="shortcut icon" href="img/logo/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/_utils.css">
+    <link rel="stylesheet" href="css/_header_footer.css">
+    
+    <link rel="stylesheet" href="css/story_detail.css">
+</head>
+<body>
+
+<div class="head-main-container">
+    <header>
+        <div class="upper-header">
+            <div class="upper-header-left">
+                <a href="tel:+923101120402">
+                    <i class="fa-solid fa-phone"></i>
+                    +92 310 1120402
+                </a>
+            </div>
+            <div class="upper-header-mid">
+                <a href="mailto:azam78454@gmail.com">
+                    <i class="fa-solid fa-envelope"></i>
+                    azam78454@gmail.com
+                </a>
+            </div>
+            <div class="upper-header-right">
+                <i class="fa-solid fa-clock"></i>
+                Open Hours: Monday - Sunday 8:00AM - 9:00PM
+            </div>
+        </div>
+        <div class="downer-header">
+            <div class="downer-header-left">
+                <a href="index.html"><img src="img/logo/logo.png" alt="Logo Pic"></a>
+            </div>
+            <div class="downer-header-mid">
+                <a href="#">Home</a>
+                <a href="#">Categories</a>
+                <a href="#">Stories</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Book a Table</a>
+            </div>
+            <div class="downer-header-right">
+                <div class="search-div">
+                    <a href="javascript:void()"><ion-icon class="ionicon search-bar-opener"  name="search-outline"></ion-icon></a>
+                    <form class="search-bar">
+                        <input type="text" placeholder="Search here...">
+                        <button>Search</button>
+                    </form>
+                </div>
+                <a href="#" class="user-link"><i class="fa-regular fa-user"></i></a>
+                <!-- <a href="#"><ion-icon class="ionicon" name="cart-outline"></ion-icon></a>
+                <div class="account">
+                    <p class="account-action-list-opener">Muhammad Azam <i class="fa-solid fa-sort-down"></i></p>
+                    <ul class="account-action-list" id="account-action-list">
+                        <li><a href="#">My Pofile</a></li>
+                        <li><a href="#">Logout</a></li>
+                    </ul>
+                </div> -->
+            </div>
+        </div>
+        <div class="for-mobile-nav-bar">
+            <div class="sides">
+                <div class="for-mobile-nav-bar-left">
+                    <a class="simple-logo" href="index.html"><img src="img/logo/logo.png" alt="Logo Pic"></a>
+                </div>
+                <div class="for-mobile-nav-bar-right">
+                    <div class="lines bars">
+                        <span class="line line-1"></span>
+                        <span class="line line-2"></span>
+                        <span class="line line-3"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">Stories</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Book a Table</a></li>
+
+                    <!-- <li><a href="#">Login</a></li>
+                    <li><a href="#">Sign Up</a></li> -->
+                    <li class="for-mobile-account-action-list-opener">Muhammad Azam <i class="fa-solid fa-sort-down"></i></li>
+                    <ul class="for-mobile-account-action-list">
+                        <li><a href="#">My Profile</a></li>
+                        <li><a href="#">Cart</a></li>
+                        <li><a href="#">Logout</a></li>
+                    </ul>
+
+                    <li class="search-li">
+                        <form action="">
+                            <input type="text" placeholder="Search Here...">
+                            <button type="submit">Search</button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <div class="left-side">
+                <div class="upper-section">
+                    <h1 class="dash"><span class="dash"></span>(Title)</h1>
+                </div>
+                <div class="downer-section">
+                    <div class="bunch">
+                        <img src="_test_img/Beef Biyani.jpg">
+                        <h2>Begin</h2>
+                        <p>At the beginning</p>
+                    </div>
+                    <div class="bunch">
+                        <video src="_test_img/video.mp4" controls></video>
+                        <h2>End</h2>
+                        <p>At the end </p>
+                    </div>
+                </div>
+            </div>
+            <div class="right-side">
+                <h3>Other Stories</h3>
+                <div class="story story-1">
+                    <div class="img">
+                        <img src="_test_img/Beef Biyani.jpg" alt="Story Pic">
+                    </div>
+                    <div class="date">
+                        <i class="fa-regular fa-calendar-days"></i>
+                        March 12, 2023
+                    </div>
+                    <div class="title"><h3>New Branch Opening</h3></div>
+                    <div class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt aut...</div>
+                    <div class="read-more">
+                        <a href="#">Read More... <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="story story-2">
+                    <div class="img">
+                        <img src="_test_img/Beef Biyani.jpg" alt="Story Pic">
+                    </div>
+                    <div class="date">
+                        <i class="fa-regular fa-calendar-days"></i>
+                        March 12, 2023
+                    </div>
+                    <div class="title"><h3>New Branch Opening</h3></div>
+                    <div class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt aut...</div>
+                    <div class="read-more">
+                        <a href="#">Read More... <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="story story-3">
+                    <div class="img">
+                        <img src="_test_img/Beef Biyani.jpg" alt="Story Pic">
+                    </div>
+                    <div class="date">
+                        <i class="fa-regular fa-calendar-days"></i>
+                        March 12, 2023
+                    </div>
+                    <div class="title"><h3>New Branch Opening</h3></div>
+                    <div class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt aut...</div>
+                    <div class="read-more">
+                        <a href="#">Read More... <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="story story-4">
+                    <div class="img">
+                        <img src="_test_img/Beef Biyani.jpg" alt="Story Pic">
+                    </div>
+                    <div class="date">
+                        <i class="fa-regular fa-calendar-days"></i>
+                        March 12, 2023
+                    </div>
+                    <div class="title"><h3>New Branch Opening</h3></div>
+                    <div class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt aut...</div>
+                    <div class="read-more">
+                        <a href="#">Read More... <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="upper-footer">
+            <div class="footer left-footer">
+                <p class="head">FOODIE FIZZ</p>
+                <p class="para">We hope you got a best experince on our website. </p>
+                <div class="social-icons">
+                    <a href="#" class="icon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer left-mid-footer">
+                <p class="head">Opening Hours</p>
+                <ul>
+                    <li>Monday: 08:00 am - 09:00</li>
+                    <li>Tuesday: 08:00 am - 09:00</li>
+                    <li>Wednesday: 08:00 am - 09:00</li>
+                    <li>Thursday: 08:00 am - 09:00</li>
+                    <li>Friday: 08:00 am - 09:00</li>
+                    <li>Saturday: 08:00 am - 09:00</li>
+                    <li>Sunday: 08:00 am - 09:00</li>
+                </ul>
+            </div>
+            <div class="footer right-mid-footer">
+                <p class="head">Quick Links</p>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Book a Table</a></li>
+                </ul>
+            </div>
+            <div class="footer right-footer">
+                <p class="head">Contact Information</p>
+                <div class="info">Landhi 1, Karachi, Pakistan</div>
+                <div class="info">+92 310 1120402</div>
+                <div class="info">azam78454@gmail.com</div>
+            </div>
+        </div>
+        <div class="downer-footer">
+            <p>Copyright &copy; 2023 All rights reserved | Designed and Developed by <span>Muhammad Azam</span></p>
+        </div>
+    </footer>
+</div>
+    
+</body>
+
+<!-- jQuery -->
+<script src="jquery/jquery-3.6.1.min.js"></script>
+
+<!-- Header Footer Js -->
+<script src="js/_header_footer.js"></script>
+
+<!-- Ionicon Link -->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+</html>

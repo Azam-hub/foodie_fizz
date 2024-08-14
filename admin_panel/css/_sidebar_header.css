@@ -1,0 +1,243 @@
+.head-main-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.head-main-container.sidebar-active .sidebar {
+    /* display: block; */
+    margin-left: unset;
+}
+
+.head-main-container.sidebar-active .main-container {
+    flex-basis: 80%;
+}
+
+
+.sidebar {
+    flex-basis: 20%;
+    background-color: var(--main-orange);
+    padding: 20px 10px;
+    color: #fff;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow-y: auto;
+    position: sticky;
+    top: 0;
+
+    /* display: none; */
+    margin-left: -20%;
+
+    /* transition: .5s; */
+}
+
+
+/* ::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--main-orange); 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #b45405; 
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+} */
+
+
+
+.sidebar .top {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #fff;
+    text-decoration: none;
+    /* margin-top: 8px; */
+}
+
+.sidebar .top h3 {
+    /* font-family: 'Pattaya', sans-serif; */
+    font-family: 'Akaya Kanadaka', cursive;
+    /* font-family: 'Dancing Script', cursive; */
+    font-size: 26px;
+    text-shadow: 3px 3px 4px #6d3303;
+}
+
+.sidebar .top img {
+    width: 80px;
+}
+
+.sidebar .down {
+    margin-top: 35px;
+}
+
+.sidebar .down .section {
+    margin-top: 14px;
+    position: relative;
+    padding-bottom: 10px;
+}
+.sidebar .down .section::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #8a4106;
+    width: 100%;
+    height: 2px;
+}
+
+.sidebar .down .section h3 {
+    cursor: pointer;
+}
+
+.sidebar .down .section.displayed h3 i {
+    transform: rotate(90deg);
+}
+
+.sidebar .down .section h3 i {
+    margin-right: 10px;
+    font-size: 17px;
+    transition: .3s;
+}
+
+.sidebar .down .section ul {
+    list-style: none;
+    margin-left: 8px;
+    display: none;
+}
+
+.sidebar .down .section ul li {
+    margin-top: 4px;
+}
+
+.sidebar .down .section ul li a {
+    width: 100%;
+    display: inline-block;
+    padding: 8px 12px;
+    color: #fff;
+    text-decoration: none;
+    transition: .3s;
+    border-radius: 6px;
+    font-weight: 400;
+    position: relative;
+}
+.sidebar .down .section .dot {
+    position: absolute;
+    right: 0;
+    top: -4px;
+    width: 11px;
+    height: 11px;
+    background-color: blue;
+    border-radius: 50%;
+    display: none;
+}
+
+.sidebar .down .section .dot.dot-text {
+    width: 17px;
+    height: 17px;
+    font-size: 11px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.sidebar .down .section ul li a:hover {
+    background-color: #fff;
+    color: var(--main-orange);
+}
+
+.main-container {
+    flex-basis: 100%;
+    padding: 10px;
+    /* transition: .5s; */
+    /* background-color: green; */
+}
+
+.main-container .header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-bottom: 10px;
+}
+.main-container .header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+}
+
+.main-container .header .left {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.main-container .header .left .menu-lines {
+    display: block;
+    width: 55px;
+    height: 36px;
+}
+
+.main-container .header .left .menu-lines .lines {
+    border: 1px solid #000;
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+    padding: 7px 7px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main-container .header .left .menu-lines .lines .line {
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    display: block;
+}
+
+/* .main-container .header .left .menu-lines .lines .line-1 {
+    top: 0;
+}
+.main-container .header .left .menu-lines .lines .line-2 {
+    top: 50%;
+    transform: translateY(-50%);
+}
+.main-container .header .left .menu-lines .lines .line-3 {
+    bottom: 0;
+} */
+
+.main-container .header .left .heads {
+    display: block;
+}
+
+.main-container .header .left h1 {
+    color: var(--main-orange);
+}
+
+.main-container .header .left h3 span {
+    color: #994b02;
+}
+
+.main-container .header .right {
+    align-self: center;
+}
+
+.main-container .header .right a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: var(--main-orange);
+    color: #fff;
+    border-radius: 6px;
+    margin-right: 15px;
+}
